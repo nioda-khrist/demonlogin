@@ -7,6 +7,7 @@ import Social from '@/components/Sections/Social';
 import * as Yup from 'yup';
 import FormikControl from '@/components/forms/FormikControl';
 import { Form, Formik } from 'formik';
+import mask from '@/assets/mask.png';
 
 const index = ({ toggleLogin }) => {
   const dispatch = useDispatch();
@@ -43,11 +44,7 @@ const index = ({ toggleLogin }) => {
 
   return (
     <div className='login'>
-      <Title
-        heading='ひさしぶり!'
-        img='/src/assets/mask.png'
-        text='Olá, sentimos sua falta!'
-      />
+      <Title heading='ひさしぶり!' img={mask} text='Olá, sentimos sua falta!' />
 
       <Formik
         initialValues={initialValues}

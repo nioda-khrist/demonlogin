@@ -4,6 +4,9 @@ import {
   FacebookAuthProvider,
   TwitterAuthProvider,
 } from 'firebase/auth';
+import igLogo from '@/assets/ig.svg';
+import twitterLogo from '@/assets/twitter.svg';
+import fbLogo from '@/assets/fb.svg';
 
 const Social = ({ toggleLogin, title, text, link }) => {
   const auth = getAuth();
@@ -74,13 +77,13 @@ const Social = ({ toggleLogin, title, text, link }) => {
       </div>
       <div className='alternate--btn-group'>
         <button onClick={fbLogin}>
-          <img src='/src/assets/ig.svg' />
+          <img src={igLogo} />
         </button>
         <button onClick={twitterLogin}>
-          <img src='/src/assets/twitter.svg' />
+          <img src={twitterLogo} />
         </button>
         <button onClick={fbLogin}>
-          <img src='/src/assets/fb.svg' />
+          <img src={fbLogo} />
         </button>
       </div>
       <p className='alternate--desc'>

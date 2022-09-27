@@ -1,14 +1,17 @@
+import demonLogo from '@/assets/demon-logo.png';
+import back from '@/assets/back.svg';
+
 const index = () => {
   return (
     <div className='header'>
       <div className='header--top'>
-        <img src='/src/assets/demon-logo.png' />
+        <img src={demonLogo} />
         <div>
           anime<span>yabu.</span>
         </div>
       </div>
       <div className='header--btn'>
-        <img src='/src/assets/back.svg' />
+        <img src={back} />
       </div>
     </div>
   );

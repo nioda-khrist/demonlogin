@@ -7,6 +7,7 @@ import Social from '@/components/Sections/Social';
 import * as Yup from 'yup';
 import FormikControl from '@/components/forms/FormikControl';
 import { Form, Formik } from 'formik';
+import nekoMask from '@/assets/neko-mask.png';
 
 const index = ({ toggleLogin }) => {
   const dispatch = useDispatch();
@@ -47,11 +48,7 @@ const index = ({ toggleLogin }) => {
 
   return (
     <div className='register'>
-      <Title
-        heading='ようこそ!'
-        img='/src/assets/neko-mask.png'
-        text='Bem-vindo(a)!'
-      />
+      <Title heading='ようこそ!' img={nekoMask} text='Bem-vindo(a)!' />
 
       <Formik
         initialValues={initialValues}
