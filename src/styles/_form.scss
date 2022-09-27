@@ -1,0 +1,71 @@
+form{
+    padding-top:8px;
+    padding-bottom:43px;
+
+    &>p{
+        margin-bottom:0px;
+        font-family: 'Poppins';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        text-align: right;
+        letter-spacing: -0.103101px;
+        color: #E487FB;
+    }
+
+    /* each form item */
+    .form-item{
+        padding-bottom:25px;
+        position:relative;
+    
+        label{
+            font-size: 14px;
+            line-height: 21px;
+            letter-spacing: -0.103101px;
+            display:block;
+        }
+    
+        input{
+            background: rgba(255, 255, 255, 0.47);
+            border: 2px solid #FFFFFF;
+            border-radius: 10px;
+            font-family:"Archivo",sans-serif;
+            font-size: 16px;
+            line-height: 17px;
+            color: #D8D5D9;
+            padding:20px 21px 19px 21px;
+            width:343px;
+            max-width:100%;
+            outline:none;
+    
+            &.invalid-item{
+                border: 2px solid $error;
+            }
+        }
+    
+        .field-error{
+            font-size: 14px;
+            line-height: 21px;
+            color:$error;
+            text-align: right;
+            bottom:0px;
+            right:13px;
+            position:absolute;
+        }
+    }
+
+    button.submit{
+        background: $btn;
+        color:$text-secondary;
+        padding:20px 21px 19px 21px;
+        border-radius: 10px;
+        width:100%;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 17px;
+        font-family:"Archivo",sans-serif;
+        outline:none;
+        margin-top:13px;
+    }
+}
+

@@ -1,0 +1,27 @@
+.header{
+    position:fixed;
+    top:0px;
+    left:0px;
+    padding-left:23px;
+    top:19px;
+    z-index:1000;
+
+    &--top{
+        display:flex;
+        align-items:center;
+        gap:14px;
+        font-weight: 900;
+        font-size: 22px;
+        line-height: 26px;
+        letter-spacing: 0.065em;
+        margin-bottom:24px;
+
+        img{
+            width:46px;
+        }
+
+        span{
+            color:$title;
+        }
+    }
+}

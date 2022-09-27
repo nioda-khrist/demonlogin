@@ -1,0 +1,41 @@
+.main{
+    width:100% !important;
+    min-height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+    div{
+        text-align: center;
+        
+        h1{
+            font-family: 'Roboto',sans-serif;
+            font-weight: 900;
+            font-size: 80.1282px;
+            line-height: 94px;
+            letter-spacing: 0.065em;
+            margin-bottom:5px;
+            width:100%;
+            margin-bottom:20px;
+            text-align: center;
+    
+            span{
+                color:$title;
+            }
+        }
+    
+        button{
+            background: $btn;
+            color:$text-secondary;
+            padding:20px 21px 19px 21px;
+            border-radius: 10px;
+            min-width:200px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 17px;
+            font-family:"Archivo",sans-serif;
+            outline:none;
+            margin-top:13px;
+        }
+    }
+}

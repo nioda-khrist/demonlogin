@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+
+$main:#3E1149;
+$secondary: #000;
+$title:#CA38ED;
+$text-primary:#fff;
+$text-secondary: #3E1149;
+$error:#AD3C40;
+$btn: #E487FB;
+$icons: rgba(255, 255, 255, 0.47);
+
+$tablet: 992px;
+$mobile: 767px;
+
+/* basic styling */
+body{
+    font-family:'Roboto',sans-serif;
+    font-size:18px;
+    color: $text-primary;
+    background-color: $secondary;
+    margin:0px;
+}
+
+*{
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;    
+    box-sizing: border-box;         
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin-top:0px;
+    margin-bottom:0px;
+}
+
+.secondary-title{
+    font-family:'Poppins',sans-serif;
+    font-weight:900;
+}
+
+form label,form .field-error{
+    font-family:'Poppins',sans-serif;
+    font-weight:400;
+}
+
+p{
+    margin-top:0px;
+    margin-bottom:20px;
+}
+
+/* application container */
+.App{
+    display:flex;
+    min-height:100vh;    
+    align-items: stretch;
+
+    &>div{
+        width:50%;
+    }
+
+    .form-container{
+        display:flex;
+        align-items: center;
+    }
+
+    .slider-container{
+        padding-top:63px;
+        padding-bottom:74px;
+        padding-left:40px;
+        padding-right:40px;
+        background: #3E1149;
+    }
+}
+
+/* application container - responsive */
+@media (max-width:$tablet){
+    .App{
+        flex-wrap:wrap;
+
+        &>div{
+            padding-top:80px;
+            padding-bottom:80px;
+            width:100%;
+        }
+
+        .form-container{
+            background: linear-gradient(180deg, #CA38ED -30.11%, #000000 100%);
+        }
+    }
+}
+
+@media (max-width:$tablet){
+    .App{
+        flex-wrap:wrap;
+
+        &>div{
+            padding-top:80px;
+            padding-bottom:80px;
+            width:100%;
+        }
+    }
+}
+
+@import "@/styles/header.scss";
+@import "@/styles/title.scss";
+@import "@/styles/form.scss";
+@import "@/styles/login.scss";
+@import "@/styles/social.scss";
+@import "@/styles/slider.scss";
+@import "@/styles/main.scss";

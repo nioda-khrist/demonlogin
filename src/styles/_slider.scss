@@ -1,0 +1,51 @@
+.image-slider{
+    text-align: center;
+    .item{
+        img{
+            max-width:700px;
+            margin:auto;
+            height:753px;
+            object-fit: contain;
+        }
+
+        h4{
+            font-family: 'Roboto',sans-serif;
+            font-weight: 900;
+            font-size: 80.1282px;
+            line-height: 94px;
+            letter-spacing: 0.065em;
+            margin-bottom:5px;
+
+            span{
+                color:$title;
+            }
+        }
+
+        p{
+            max-width:463px;
+            margin:auto;
+        }
+    }
+}
+
+/* slider dots styling */
+.owl-theme{
+    .owl-dots{
+        margin-top:23px;
+
+        .owl-dot{
+            &.active{
+                span{
+                    background: #C4C4C4;
+                }
+            }
+
+            span{
+                width:39px;
+                height:6px;
+                margin:0px 4px;
+                background: rgba(196, 196, 196, 0.48);
+            }
+        }
+    }
+}
